@@ -516,12 +516,13 @@
     /* Injected CSS Code */
 </style>
 
-<script src="https://cdn.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.21771" type="text/javascript"></script>
-<script src="https://cdn.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.21771" type="text/javascript"></script>
-<script src="https://cdn.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.21771" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.21903" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.21903" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.21903" type="text/javascript"></script>
 <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
-<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.21771" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.21903" type="text/javascript"></script>
 <script type="text/javascript">
+   JotForm.setConditions([{"action":[{"id":"action_1606178320660","visibility":"Hide","isError":false,"field":"36"}],"id":"1606178358778","index":"0","link":"Any","priority":"0","terms":[{"id":"term_1606178343681","field":"35","operator":"equals","value":"Administrator","isError":false},{"id":"term_1606178335754","field":"35","operator":"equals","value":"Librarian","isError":false},{"id":"term_1606178320660","field":"35","operator":"equals","value":"Teacher","isError":false}],"type":"field"}]);
 	JotForm.init(function(){
 if (window.JotForm && JotForm.accessible) $('input_39').setAttribute('tabindex',0);
 if (window.JotForm && JotForm.accessible) $('input_40').setAttribute('tabindex',0);
@@ -551,7 +552,7 @@ JotForm.paymentExtrasOnTheFly([null,null,{"name":"email","qid":"2","text":"E-mai
   <input type="hidden" id="JWTContainer" value="" />
   <input type="hidden" id="cardinalOrderNumber" value="" />
   <div role="main" class="form-all">
-    <link type="text/css" rel="stylesheet" media="all" href="https://cdn.jotfor.ms/wizards/languageWizard/custom-dropdown/css/lang-dd.css?3.3.21771" />
+    <link type="text/css" rel="stylesheet" media="all" href="https://cdn.jotfor.ms/wizards/languageWizard/custom-dropdown/css/lang-dd.css?3.3.21903" />
     <div class="cont">
       <input type="text" id="input_language" name="input_language" style="display:none" />
       <div class="language-dd" id="langDd" style="display:none">
@@ -565,7 +566,7 @@ JotForm.paymentExtrasOnTheFly([null,null,{"name":"email","qid":"2","text":"E-mai
         </ul>
       </div>
     </div>
-    <script type="text/javascript" src="https://cdn.jotfor.ms/js/formTranslation.v2.js?3.3.21771"></script>
+    <script type="text/javascript" src="https://cdn.jotfor.ms/js/formTranslation.v2.js?3.3.21903"></script>
     <ul class="form-section page-section">
       <li id="cid_10" class="form-input-wide" data-type="control_head">
         <div class="form-header-group  header-large">
@@ -656,15 +657,14 @@ JotForm.paymentExtrasOnTheFly([null,null,{"name":"email","qid":"2","text":"E-mai
           </span>
         </label>
         <div id="cid_42" class="form-input-wide jf-required" data-layout="half">
-          <select class="form-dropdown validate[required]" id="input_42" name="q42_whichSchool" style="width:310px" data-component="dropdown" required="" aria-labelledby="label_42">
-            <option value=""> Please Select </option>
+          <select class="form-dropdown validate[required]" style="width:310px;" id="input_42" name="q42_whichSchool">
+            <option value=""> Please Select One </option>
             <option value="RBHS"> RBHS </option>
             <option value="MCHS"> MCHS </option>
             <option value="PHS"> PHS </option>
             <option value="DNHS"> DNHS </option>
             <option value="WVHS"> WVHS </option>
             <option value="PUSD Administration"> PUSD Administration </option>
-            <option value="Other"> Other </option>
           </select>
         </div>
       </li>
@@ -676,8 +676,8 @@ JotForm.paymentExtrasOnTheFly([null,null,{"name":"email","qid":"2","text":"E-mai
           </span>
         </label>
         <div id="cid_35" class="form-input-wide jf-required" data-layout="half">
-          <select class="form-dropdown validate[required]" id="input_35" name="q35_currentlyWhich" style="width:310px" data-component="dropdown" required="" aria-labelledby="label_35">
-            <option value=""> Please Select </option>
+          <select class="form-dropdown validate[required]" style="width:310px;" id="input_35" name="q35_currentlyWhich">
+            <option value=""> Please Select One </option>
             <option value="Middle Schooler"> Middle Schooler </option>
             <option value="9th Grader"> 9th Grader </option>
             <option value="10th Grader"> 10th Grader </option>
@@ -689,7 +689,7 @@ JotForm.paymentExtrasOnTheFly([null,null,{"name":"email","qid":"2","text":"E-mai
           </select>
         </div>
       </li>
-      <li class="form-line form-line-column form-col-5 jf-required" data-type="control_checkbox" id="id_36">
+      <li class="form-line form-line-column form-col-5 jf-required form-field-hidden" style="display:none;" data-type="control_checkbox" id="id_36">
         <label class="form-label form-label-top" id="label_36" for="input_36">
           Which Subcommittees would you like to join?
           <span class="form-required">
@@ -756,9 +756,7 @@ for (var i = 0; i < all_spc.length; i++)
   all_spc[i].value = "203208108147144-203208108147144";
 }
   </script>
-  <div class="formFooter-heightMask">
-  </div>
 </form></body>
 </html>
-<script type="text/javascript">JotForm.ownerView=true;</script><script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.21771"></script>
-<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.21771"></script>
+<script type="text/javascript">JotForm.ownerView=true;</script><script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.21903"></script>
+<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.21903"></script>
